@@ -9,52 +9,120 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <!-- Landing Page -->
-  <div class="landing-page">
-    <h1>Planning something special?</h1>
-    <div class="options">
-      <div class="option" data-category="food">
-        <img src="food.jpg" alt="Food">
-        <p>Food</p>
+  <!-- Top Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search for food or items...">
+  </div>
+
+  <!-- Tab Navigation -->
+  <div class="tabs">
+    <div class="tab active" data-tab="all">All</div>
+    <div class="tab" data-tab="food">Food</div>
+    <div class="tab" data-tab="items">Items</div>
+    <div class="tab" data-tab="contact">Contact</div>
+  </div>
+
+  <!-- Cupcakes Section -->
+  <div class="section">
+    <div class="section-header">
+      <h2>Cupcakes</h2>
+      <a href="#" class="see-all">See all</a>
+    </div>
+    <div class="scrollable-row">
+      <div class="item" data-id="1">
+        <img src="images/choc-orange-cupcake.jpg" alt="Choc Orange Cupcake">
+        <p class="name">Choc Orange Cupcake</p>
+        <p class="details">Boxes of 6/12</p>
+        <p class="price">From £12.00</p>
       </div>
-      <div class="option" data-category="decor">
-        <img src="decor.jpg" alt="Decor">
-        <p>Decor</p>
+      <div class="item" data-id="2">
+        <img src="images/rose-cupcake.jpg" alt="Rose Cupcake">
+        <p class="name">Rose Cupcake</p>
+        <p class="details">Boxes of 6/12</p>
+        <p class="price">From £12.00</p>
       </div>
-      <div class="option" data-category="flowers">
-        <img src="flowers.jpg" alt="Flowers">
-        <p>Flowers</p>
-      </div>
-      <div class="option" data-category="rentals">
-        <img src="rentals.jpg" alt="Rentals">
-        <p>Rentals</p>
+      <div class="item" data-id="3">
+        <img src="images/vanilla-cupcake.jpg" alt="Vanilla Cupcake">
+        <p class="name">Vanilla Cupcake</p>
+        <p class="details">Boxes of 6/12</p>
+        <p class="price">From £12.00</p>
       </div>
     </div>
   </div>
 
-  <!-- Product Selection -->
-  <div class="product-selection hidden">
-    <h2>Choose your items</h2>
-    <div class="products">
-      <!-- Products will be dynamically loaded here -->
+  <!-- Cakes Section -->
+  <div class="section">
+    <div class="section-header">
+      <h2>Cakes</h2>
+      <a href="#" class="see-all">See all</a>
     </div>
-    <button class="back-btn">Back</button>
+    <div class="scrollable-row">
+      <div class="item" data-id="4">
+        <img src="images/caramel-milk-cake.jpg" alt="Caramel Milk Cake">
+        <p class="name">Caramel Milk Cake</p>
+        <p class="details">Serves 8-10</p>
+        <p class="price">From £25.00</p>
+      </div>
+      <div class="item" data-id="5">
+        <img src="images/saffron-cake.jpg" alt="Saffron Cake">
+        <p class="name">Saffron Cake</p>
+        <p class="details">Serves 8-10</p>
+        <p class="price">From £30.00</p>
+      </div>
+      <div class="item" data-id="6">
+        <img src="images/school-cake.jpg" alt="School Cake">
+        <p class="name">School Cake</p>
+        <p class="details">Serves 8-10</p>
+        <p class="price">From £20.00</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Items Section -->
+  <div class="section">
+    <div class="section-header">
+      <h2>Items</h2>
+      <a href="#" class="see-all">See all</a>
+    </div>
+    <div class="scrollable-row">
+      <div class="item" data-id="7">
+        <img src="images/paper-plates.jpg" alt="Paper Plates">
+        <p class="name">Paper Plates</p>
+        <p class="details">Pack of 50</p>
+        <p class="price">From £5.00</p>
+      </div>
+      <div class="item" data-id="8">
+        <img src="images/paper-cups.jpg" alt="Paper Cups">
+        <p class="name">Paper Cups</p>
+        <p class="details">Pack of 50</p>
+        <p class="price">From £5.00</p>
+      </div>
+      <div class="item" data-id="9">
+        <img src="images/napkins.jpg" alt="Tissue Napkins">
+        <p class="name">Tissue Napkins</p>
+        <p class="details">Pack of 100</p>
+        <p class="price">From £3.00</p>
+      </div>
+    </div>
   </div>
 
   <!-- Shopping Basket -->
   <div class="shopping-basket">
-    <div class="basket-icon">🛒</div>
-    <div class="basket-items"></div>
-  </div>
-
-  <!-- Checkout Section -->
-  <div class="checkout hidden">
-    <h2>Your Order</h2>
-    <div class="order-summary"></div>
-    <label for="return-date">Return Date:</label>
-    <input type="date" id="return-date">
-    <button class="checkout-btn">Checkout</button>
-    <button class="back-btn">Back</button>
+    <div class="basket-grid">
+      <!-- 12 slots for items -->
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+    </div>
   </div>
 </body>
 </html>
