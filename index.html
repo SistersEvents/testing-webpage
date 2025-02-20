@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Planner Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Landing Page -->
+  <div class="landing-page">
+    <h1>Planning something special?</h1>
+    <div class="options">
+      <div class="option" data-category="food">
+        <img src="food.jpg" alt="Food">
+        <p>Food</p>
+      </div>
+      <div class="option" data-category="decor">
+        <img src="decor.jpg" alt="Decor">
+        <p>Decor</p>
+      </div>
+      <div class="option" data-category="flowers">
+        <img src="flowers.jpg" alt="Flowers">
+        <p>Flowers</p>
+      </div>
+      <div class="option" data-category="rentals">
+        <img src="rentals.jpg" alt="Rentals">
+        <p>Rentals</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Selection -->
+  <div class="product-selection hidden">
+    <h2>Choose your items</h2>
+    <div class="products">
+      <!-- Products will be dynamically loaded here -->
+    </div>
+    <button class="back-btn">Back</button>
+  </div>
+
+  <!-- Shopping Basket -->
+  <div class="shopping-basket">
+    <div class="basket-icon">🛒</div>
+    <div class="basket-items"></div>
+  </div>
+
+  <!-- Checkout Section -->
+  <div class="checkout hidden">
+    <h2>Your Order</h2>
+    <div class="order-summary"></div>
+    <label for="return-date">Return Date:</label>
+    <input type="date" id="return-date">
+    <button class="checkout-btn">Checkout</button>
+    <button class="back-btn">Back</button>
+  </div>
+</body>
+</html>
